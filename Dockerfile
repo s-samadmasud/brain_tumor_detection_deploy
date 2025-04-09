@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     software-properties-common \
     git \
+    libgl1-mesa-glx \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /main
