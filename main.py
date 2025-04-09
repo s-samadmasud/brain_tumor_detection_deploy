@@ -11,6 +11,7 @@ from keras.models import Sequential, load_model  # For defining and loading deep
 try:
   # Load pre-trained model (assuming it's saved as 'model.h5')
   model = load_model('model.h5')
+
   model_loaded = True  # Flag to indicate successful model loading
 except OSError:
   st.error("Error: 'model.h5' file not found. Please ensure the model is saved in the correct location.")
